@@ -1,0 +1,10 @@
+ .uploaderbox{
+  max-width:40%;
+  margin:3rem auto;
+  background-color: aquamarine;
+  height:30vh;
+  border-color: black;
+ }
+ .uploaderboxinside{
+  cursor: pointer;
+ }

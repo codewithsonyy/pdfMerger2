@@ -1,0 +1,166 @@
+.nav{
+
+  display:flex;
+  max-width:144rem;
+  
+  height:11rem;
+  background: rgba(255, 255, 255, 0.7);
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+backdrop-filter: blur(2.5px);
+align-items:center;
+justify-content: space-around;
+position: relative;
+}
+.nav-left img{
+  min-width:6rem;
+  height:6rem;
+  margin:0px 10px;}
+
+.nav-right,.mobile-nav{
+  display:flex;
+  gap:6.2rem;
+  align-items:center;
+  font-family: 'Outfit';
+
+font-weight: 500;
+font-size: 1.8rem;
+line-height: 2.3rem;
+
+
+}
+.nav-right a{
+  text-decoration:none;
+  font-weight:500;
+  
+  color:black;
+}
+
+.btn-nav button,.btn-nav button:link,.btn-nav button:visited{
+ 
+  font-family: 'Outfit';
+
+font-weight: 500;
+font-size: 1.8rem;
+line-height: 2.3rem;
+  padding: 1.3rem 3.3rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+  
+border: 2.5px solid #c1fe73;
+border-radius: 2.9rem;
+background-color: white;
+text-align: center;
+color:#0d4a9f;
+}
+.btn-nav button:hover,.btn-nav button:active{
+background-color: #c1fe73;
+color:#0d4a9f;
+}
+.mobile-nav{
+  flex-direction: column;
+  gap:5rem;
+  position: absolute;
+width:39rem;
+padding:7rem 0rem;
+right: 0%;
+top: 0%;
+z-index: -1;
+
+background: rgba(255, 255, 255, 0.7);
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+backdrop-filter: blur(2.5px);
+
+}
+.mobile-nav a{
+  text-decoration: none;
+  color:black;
+}
+.mobilenav button{
+  margin-right: 2rem;
+  width:3rem;
+  height:3rem;
+  background-color: white;
+  color:black;
+  outline:none;
+  border:none;
+  z-index: 100;
+  display:none;
+}
+.hidden{
+  display:none;
+}
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/**************************/
+/* BELOW 1808px (Smaller desktops) */
+/**************************/
+
+
+@media (max-width: 113em) {
+.nav{
+  max-width: 180rem;
+}
+}
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .nav{
+    height:7rem;
+   
+  }
+  .nav-left img{
+    min-width:4rem;
+    height:4rem;
+    margin:0px 10px;}
+    .nav-right{
+
+      font-size: 1.6rem;
+      }
+      .btn-nav button{
+        font-size: 1.6rem;
+        line-height: 1rem;
+          padding: 1rem 1.9rem; 
+      }
+      
+      
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+/* @media (max-width: 75em) {} */
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+/* @media (max-width: 59em) {} */
+
+
+
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .nav{
+    justify-content: space-between;
+  }
+.nav-right{
+  display:none;
+}
+.mobilenav button{
+  display:block;
+}
+
+
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+/* @media (max-width: 34em) {} */

@@ -1,0 +1,19 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+ 
+}
+html{
+  font-size:62.5%;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+ 
+  
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
